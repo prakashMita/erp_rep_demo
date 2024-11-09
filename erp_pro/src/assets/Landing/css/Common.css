@@ -1,0 +1,62 @@
+.fs_60 {
+
+    font-size: 50px;
+}
+
+.fs_30 {
+
+    font-size: 16px;
+}
+
+.fs_40 {
+
+    font-size: 23px;
+}
+
+.fs_20 {
+
+    font-size: 13px;
+}
+
+.fs_25 {
+
+    font-size: 15px;
+}
+.fs_15 {
+
+    font-size: 15px;
+}
+
+/* header logo */
+
+.lw_lh {
+    width: 135px;
+    height: 62px;
+}
+
+/* landing login & signup form */
+
+.llfw_lsfw {
+    width: 450px;
+}
+
+.lsfpi {
+    position: relative;
+
+}
+
+.lsfpb {
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+
+
+}
+
+.sfi{
+    position: relative;
+}
+

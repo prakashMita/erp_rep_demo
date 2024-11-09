@@ -1,0 +1,39 @@
+/* * {
+    font-family: "Poppins", sans-serif;
+  } */
+
+  /* :root {
+    --background-color1: #fafaff;
+    --background-color2: #ffffff;
+    --background-color3: #ededed;
+    --background-color4: #cad7fda4;
+    --primary-color: #4b49ac;
+    --secondary-color: #0c007d;
+    --Border-color: #3f0097;
+    --one-use-color: #3f0097;
+    --two-use-color: #5500cb;
+    --bs-body-font-weight: 400;
+    --bs-body-font-family: "Chakra Petch", sans-serif;
+  } */
+
+  body {
+    background-color: var(--background-color4);
+    font-weight: var(--bs-body-font-weight);
+    font-family: var(--bs-body-font-family);
+  }
+
+  
+header { 
+    background-color: var(--background-color1);
+  }
+
+  .logo {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(47, 141, 70);
+  }
+
+  .searchbar input {
+    background-color: var(--background-color3);
+    font-size: .625rem;
+  }

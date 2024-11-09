@@ -1,0 +1,55 @@
+.modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.3s ease-out;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #28a745;
+}
+
+.success-logo {
+    max-width: 160px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.continue-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+

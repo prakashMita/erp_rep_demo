@@ -1,0 +1,22 @@
+.intro {
+    /* background-color: #0e54bd; */
+    color: #fff; /* Optional: set text color to white for contrast */
+   height: 190px
+  }
+
+.cardcomcolor{
+    color: rgb(233, 97, 47);  
+}
+.cardcomcolorbg{
+
+    background-color:rgb(233, 97, 47);  
+}
+.card{
+    /* height: 370px; */
+    border: solid 2px;
+    border-color: #d0cece;
+    /* width: ; */
+}
+.cardhead{
+    height: 120px;
+}
