@@ -1,8 +1,8 @@
-/* * {
+* {
     font-family: "Poppins", sans-serif;
-  } */
+  }
 
-  /* :root {
+  :root {
     --background-color1: #fafaff;
     --background-color2: #ffffff;
     --background-color3: #ededed;
@@ -14,12 +14,19 @@
     --two-use-color: #5500cb;
     --bs-body-font-weight: 400;
     --bs-body-font-family: "Chakra Petch", sans-serif;
-  } */
+    --bs-heading-color: inherit;
+    --bs-theme: #00ff9c;
+    --bs-theme-color: #000;
+    --bs-border-width: 0.5px;
+    /* --bs-border-color: hsla(0, 0%, 100%, .25); */
+    /* --bs-body-color: hsla(0, 0%, 100%, .75); */
+  }
 
   body {
     background-color: var(--background-color4);
     font-weight: var(--bs-body-font-weight);
     font-family: var(--bs-body-font-family);
+    font-size: 12px;
   }
 
   
@@ -35,5 +42,55 @@ header {
 
   .searchbar input {
     background-color: var(--background-color3);
-    font-size: .625rem;
+    /* font-size: .625rem; */
   }
+
+  .page-header{
+    color: var(--bs-heading-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .fs-18px {
+    font-size: 18px !important;
+}
+
+.fs-20px {
+  font-size: 20px !important;
+}
+
+.fs-11px {
+  font-size: 11px !important;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.625rem;
+  --bs-btn-border-radius: 0;
+}
+
+.btn-theme {
+  background-color: var(--bs-theme);
+  border-color: var(--bs-theme);
+  position: relative;
+}
+
+.form-control {
+  /* border: var(--bs-border-width) solid var(--bs-border-color); */
+  color: var(--bs-body-color);
+}
+
+.btn {
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 0.75rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.5;
+  /* --bs-btn-color: var(--bs-body-color);
+  --bs-btn-bg: transparent; */
+  /* background-color: var(--bs-btn-bg); */
+  /* color: var(--bs-btn-color); */
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+}

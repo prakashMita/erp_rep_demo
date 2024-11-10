@@ -7,10 +7,10 @@ import Container from './Container';
 function Superadmin() {
   return (
     <div>
-        
+      <body>
        <Navbar/>
        <Container/>
-     
+       </body>  
     </div>
   )
 }

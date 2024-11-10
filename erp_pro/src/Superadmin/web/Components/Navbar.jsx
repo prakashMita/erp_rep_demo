@@ -6,31 +6,31 @@ function Navbar() {
         <div>
             <header>
 
-                <div class="logosec ">
-                    <div class="logo">Mita</div>
-                    <i class="bi bi-list menuicn"></i>                       
+                <div className="logosec">
+                    <div className="logo">Mita</div>
+                    <i className="bi bi-list menuicn"></i>                       
                         
                 </div>
 
-                <div class="searchbar">
-                <i class="bi bi-search"></i>
+                <div className="searchbar">
+                <i className="bi bi-search"></i>
 
                     <input type="text"
                         placeholder="Search"/>
-                        {/* <div class="searchbtn">
+                        {/* <div className="searchbtn">
                         </div> */}
                 </div>
 
-                <div class="message">
-                    <div class="circle"></div>
+                <div className="message">
+                    <div className="circle"></div>
                     <img src=
                         "https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
-                        class="icn"
+                        className="icn"
                         alt=""/>
-                        <div class="dp">
+                        <div className="dp">
                             <img src=
                                 "https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
-                                class="dpicn"
+                                className="dpicn"
                                 alt="dp"/>
                         </div>
                 </div>

@@ -11,6 +11,7 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 header {
@@ -150,7 +151,7 @@ header {
     gap: 50px;
   }
   .nav {
-    min-height: 91vh;
+    min-height: 100%;
     width: 250px;
     background-color: var(--background-color2);
     position: absolute;
@@ -164,21 +165,62 @@ header {
     padding: 30px 0 20px 10px;
   }
 
+
   .menu-text{
     flex: 1;
+    margin-left: 8px;
+  }
+
+  .nav-option .menu-text {
+    text-decoration: none; /* Removes underline */
+}
+
+  .dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .option2:hover .dropdown-content {
+    display: block;
   }
 
   .navcontainer {
-    height: calc(100vh - 1.5rem);
-    width: 250px;
+    height: 100vh;
+    width: 13.125rem;
     position: relative;
     overflow-y: scroll;
     overflow-x: hidden;
     transition: all 0.5s ease-in-out;
   }
   .navcontainer::-webkit-scrollbar {
-    display: none;
+    width: 5px; /* Adjust the width of the scrollbar */
   }
+  .navcontainer::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 0px;
+}
+
+.navcontainer::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
   .navclose {
     width: 80px;
   }
@@ -188,8 +230,10 @@ header {
     display: flex;
     align-items: center;
     padding: 0 30px 0 20px;
-    gap: 20px;
+    gap: 10px;
     transition: all 0.1s ease-in-out;
+    position: relative;
+    padding: 10px;
   }
   .nav-option:hover {
     border-left: 5px solid #a2a2a2;
@@ -207,16 +251,99 @@ header {
     /* gap: 30px; */
   }
 
+  .viewlist{
+    height: calc(100vh - 70px);
+    width: 1117px;
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 30px 30px 30px 20px;
+  }
+
+  .form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-clip: padding-box;
+    /* background-color: transparent; */
+    border-radius: 0;
+    display: block;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .35rem .625rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 100%
+}
+
+
+table.table-tfoot-sticky tfoot, table.table-thead-sticky thead {
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  background: var(--bs-table-bg);
+  box-shadow: 0 0 0 1px var(--bs-table-border-color);
+  position: sticky;
+}
+table.table-thead-sticky thead {
+  top: 0;
+}
+
+.btn {
+  --bs-btn-padding-x: 0.625rem;
+  --bs-btn-padding-y: 0.35rem;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: 0;
+  --bs-btn-hover-border-color: transparent;
+  border-radius: var(--bs-btn-border-radius);
+  cursor: pointer;
+  display: inline-block;
+  line-height: var(--bs-btn-line-height);
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  text-align: center;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  vertical-align: middle
+}
+
+  .page-header {
+    border: none;
+    margin-bottom: .625rem;
+    padding: 0
+}
+
 #sidebar-menu {
     margin-top: 45px !important;
     width: 70px;
-    height: 100%;
-    background: #2e90c2;
+    height: 100vh;
+    background: #111314;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
+    overflow-x: hidden;
+    padding-right: 10px; 
 }
+
+/* Optional: To style the scrollbar */
+#sidebar-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+#sidebar-menu::-webkit-scrollbar-thumb {
+  background-color: #e6dfdf;
+  border-radius: 10px;
+}
+
+#sidebar-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #e0cfcf;
+}
+/* end scrollbar */
 
 #sidebar-menu a{
     display: block;
@@ -233,6 +360,29 @@ header {
     line-height: 14px;
     font-size: 10px;
     font-weight: 300;
+}
+.ps-50px {
+  padding-left: 50px !important;
+}
+
+.ms-n1 {
+  margin-left: -.15625rem !important;
+}
+
+.my-n1 {
+  margin-bottom: -.15625rem !important;
+  margin-top: -.15625rem !important;
+}
+
+.ddd{
+  margin-left: 10px;
+}
+.formelement{
+  height: 500px;
+  width: 800px;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
+  padding: 30px 30px 30px 30px;
 }
 
 .bi-list{
@@ -268,6 +418,11 @@ font-size: 24px;
     font-size: .625rem;
     font-weight: 500;
 }
+
+/* .hsz{
+  max-width: 150px;
+  max-height: 96px;
+} */
 
   .box:hover {
     transform: scale(1.08);
